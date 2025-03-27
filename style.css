@@ -1,0 +1,870 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/BG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 20px 30px;
+    background-color: rgb(51, 49, 49);
+    color: white;
+}
+
+.header .logo{
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img{
+    width: 130px;
+}
+
+.header .btn_buy{
+    background-color: rgb(45, 128, 0);
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 60px ;
+}
+
+.navbar img{
+    width: 50px;
+}
+
+.navbar .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    list-style: none;
+    transition: 10s all ease-in-out;
+}
+
+.navbar .menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .menu a:hover{
+    color: red;
+}
+
+.navbar .icon{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .icon a{
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.icon a:hover{
+    text-decoration: underline;
+}
+
+.navbar .icon .user{
+    margin: 10px;
+    font-size: 40px;
+}
+
+.navbar .icon .search{
+    margin: 20px;
+}
+
+.home-title {
+    color: whitesmoke;
+    margin: 20px 140px;
+}
+
+.home-title .new-release{
+    font-size: 17px;
+    color: gray;
+    font-weight: bold;
+}
+
+.home-title .title{
+    font-size: 80px;
+    margin: 10px 0 10px 0;
+}
+
+.home-title .movie-datail{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.home-title .movie-datail .rate-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 5px solid green;
+    border-radius: 100%;
+    border-left: white;
+}
+
+.home-title .movie-datail .cc{
+    width: 45px;
+    border: 2px solid gainsboro;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.home-title .desc{
+    font-size: 20px;
+    width: 700px;
+}
+
+.home-title .watch-btn{
+    font-size: 18px;
+    margin-top: 40px;
+    width: 220px;
+    height: 70px;
+    font-weight: bold;
+    color: white;
+    background-color: brown;
+}
+
+.online-steaming{
+    width: 100%;
+    height: 100vh;
+    padding: 90px 140px 0 140px;
+    z-index: 2;
+}
+
+.online-steaming .online{
+    color: grey;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.online-steaming h2{
+    font-size: 50px;
+    margin: 17px 0 65px 0;
+}
+
+.movie-online-container{
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(4, 1fr);
+    color: white;
+}
+
+.online-movie-card{
+    width: 285px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.online-movie-card:first-child{ background-image: url(img/01.jpg); }
+
+.online-movie-card:nth-child(2){ background-image: url(img/02.jpg); }
+
+.online-movie-card:nth-child(3){ background-image: url(img/03.jpg); }
+
+.online-movie-card:nth-child(4){ background-image: url(img/04.jpg); }
+
+.background-opacity{
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    transition: all 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.404);
+}
+
+.background-opacity:hover{
+    background-color: rgba(0, 0, 0, 0.559);
+    cursor: pointer;
+}
+
+.action{
+    opacity: 0;
+    background-color: brown;
+    color: white !important;
+    font-size: 12px !important;
+    font-weight: bold;
+    padding: 3px 8px 3px 8px; 
+}
+.background-opacity:hover .action{
+    opacity: 1;
+}
+
+.background-opacity p{
+    font-size: 25px;
+    margin: 10px 0 20px 0;
+}
+
+.play .play-btn{
+    font-size: 16px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 15px;
+    border: none;
+}
+
+.play span{
+    font-size: 15px;
+}
+
+.straming{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 100px 140px 100px 140px;
+}
+
+.head img{
+    width: 570px;
+}
+
+.stream-title h1{
+    font-size: 45px;
+    margin-bottom: 100px;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 40px 0;
+}
+
+.heading img{
+    width: 75px;
+    margin-right: 30px;
+}
+
+.heading h3{
+    font-size: 25px;
+}
+
+.heading .text p{
+    padding-top: 30px;
+}
+
+.movies{
+    width: 100%;
+    padding: 100px 140px 100px 140px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.movies p{
+    color: grey;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.movies h2{
+    font-size: 50px;
+    margin: 20px 0 70px 0;
+}
+
+.movie-container{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(6, 2fr);
+    color: white;
+}
+
+.movie-card{
+    width: 100%;
+}
+
+.movie-image{
+    height: 220px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.movie-image1{ background-image: url(img/TVG1.jpg); }
+
+.movie-image2{ background-image: url(img/TVG2.jpg); }
+
+.movie-image3{ background-image: url(img/TVG3.jpg); }
+
+.movie-image4{ background-image: url(img/TVG4.jpg); }
+
+.movie-image5{ background-image: url(img/TVG5.jpg); }
+
+.movie-image6{ background-image: url(img/TVG6.jpg); }
+
+.movie-image7{ background-image: url(img/TVG7.jpg); }
+
+.movie-image8{ background-image: url(img/TVG8.jpg); }
+
+.movie-image9{ background-image: url(img/TVG9.jpg); }
+
+.movie-image10{ background-image: url(img/TVG10.jpg); }
+
+.movie-image11{ background-image: url(img/TVG11.jpg); }
+
+.movie-image12{ background-image: url(img/TVG12.jpg); }
+
+.ultra{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 20px;
+    padding-bottom: 20px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.ultra img{
+    width: 100px;
+}
+
+.ultra .rate{
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border: 3px solid green;
+    border-radius: 100%;
+    border-left: white;
+    margin-bottom: -5px;
+}
+
+.movie-image:hover .ultra{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.474);
+}
+
+.detail{
+    text-align: left;
+}
+
+.detail .tv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 15px;
+    color: grey;
+}
+
+.tv span{
+    width: 40px;
+    border: 1px solid grey;
+    padding: 2px;
+    text-align: center;
+}
+
+.tv p{
+    color: white;
+    font-size: 15px;
+}
+
+.detail .category{
+    color: brown;
+    text-align: left;
+    font-size: 15px;
+    margin: 10px 0 10px 0;
+}
+
+.detail a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+.movie-title:hover{
+    text-decoration: underline;
+}
+
+.BROWS-ALL-MOVIES button{
+    width: 270px;
+    height: 70px;
+    margin-top: 60px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: red;
+    border: 2px solid red;
+}
+
+.BROWS-ALL-MOVIES button:hover{
+    color: white;
+    background-color: transparent;
+}
+
+.audio{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 100px 140px 100px 140px;
+}
+
+.audio span{
+    color: grey;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.audio h2{
+    font-size: 50px;
+    margin: 10px 0 40px 0;
+}
+
+.audio-container{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.audio-card{
+    width: 100%;
+}
+
+.book{
+    height: 185px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.book1{ background-image: url(img/audio1.jpeg); }
+.book2{ background-image: url(img/audio2.jpeg); }
+.book3{ background-image: url(img/audio3.jpeg); }
+.book4{ background-image: url(img/audio4.jpeg); }
+.book5{ background-image: url(img/audio5.jpeg); }
+.book6{ background-image: url(img/audio6.jpeg); }
+
+.dolby{
+    width: 100%;
+    height: 100%;
+    padding-top: 90px;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+.dolby img{
+    width: 170px;
+    height: 150px;
+}
+
+.book5{
+    margin-top: 19px;
+}
+
+.book:hover .dolby{
+    opacity: 1;
+}
+
+.audio-detail{
+    text-align: left;
+}
+
+.audio-detail .audio-book{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    color: grey;
+}
+
+.audio-book{
+    margin-bottom: 10px;
+}
+
+.audio-book span{
+    width: 30px;
+    border: 1px solid grey;
+    padding: 2px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.audio-book p{
+    color: white;
+    font-size: 15px;
+}
+
+.audio-detail a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+.audio-title:hover{
+    text-decoration: underline;
+}
+
+.BROWS-ALL-AUDIOBOOKS button{
+    width: 300px;
+    height: 70px;
+    margin-top: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: red;
+    border: 2px solid red;
+}
+
+.BROWS-ALL-AUDIOBOOKS button:hover{
+    color: white;
+    background-color: transparent;
+}
+
+.trusted{
+    padding: 100px 140px 100px 140px;
+    background-image: url(img/white-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.trusted-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.main{
+    width: 50%;
+}
+
+.main h2{
+    font-size: 50px;
+    margin-bottom: 45px;
+}
+
+.main p{
+    font-size: 25px;
+    color: darkslategray;
+}
+
+.main .user{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    gap: 20px;
+    font-size: 15px;
+    color: darkslategrey;
+}
+
+.main .user img{
+    width: 120px;
+    border-radius: 100%;
+}
+
+.user .logo img{
+    margin-left: -30px;
+    width: 70px;
+}
+
+.user .text p{
+    font-size: 20px;
+    margin-bottom: 7px;
+    color: black;
+}
+
+.users{
+    width: 40%;
+}
+
+.users img{
+    width: 100%;
+}
+
+.plan{
+    width: 100%;
+    z-index: 2;
+}
+
+.plan .title-plan{
+    color: rgb(194, 184, 184);
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.plan h2{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+.video{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.plan-collection{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 50px 150px 50px 160px;
+    gap: 65px;
+}
+
+.plan1{
+    width: 350px;
+    height: 400px;
+    background-color: whitesmoke;
+    text-align: center;
+    border: 1px solid grey;
+    padding: 45px;
+}
+
+.plan1 img{
+    width: 65px;
+}
+
+.plan1 .plan-p1{
+    font-size: 20px;
+    color: black;
+    margin-top: 10px;
+}
+
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+    margin: -10px 0 -10px 0;
+}
+
+.price h3{
+    font-size: 80px;
+}
+
+.plan-p2{
+    font-size: 15px;
+}
+
+.plan1 button{
+    width: 280px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    border: 2px solid red;
+    margin-top: 15px;
+}
+
+button:hover{
+    color: black;
+    background-color: transparent;
+}
+
+.plan-p3{
+    margin-top: 18px;
+}
+
+.plan2{
+    height: 490px;
+}
+
+.save{
+    display: inline-block;
+    width: 110px;
+    padding: 5px;
+    border-radius: 50px;
+    color: red;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: rgb(244, 225, 228);
+    margin: 15px 0 15px 0;
+}
+
+.discount{
+    font-size: 20px;
+}
+
+.discount del{
+    color: gray;
+}
+
+.footer{
+    width: 100%;
+    height: 110vh;
+    background-color: black;
+    color: whitesmoke;
+    padding-top: 70px;
+    text-align: center;
+}
+
+.footer h3{
+    font-size: 45px;
+}
+
+.footer .title-desc{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.contact-form{
+    margin-top: 20px;
+}
+
+.contact-form input{
+    width: 400px;
+    height: 70px;
+    padding-left: 30px;
+    font-size: 20px;
+    border: none;
+}
+
+.contact-form input:focus{
+    border: none;
+    outline: none;
+}
+
+.contact-form button{
+    width: 200px;
+    height: 70px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    border: none;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    margin-top: 70px;
+    background-color: rgb(51, 49, 49);
+}
+
+.footer-menu{ 
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 100px 140px 100px 150px;
+    gap: -200px;
+    text-align: left;
+}
+
+.menu1{
+    width: 350px;
+    margin-right: 170px;
+}
+
+.menu1 p{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.menu1 .menu-desc{
+    font-size: 20px;
+}
+
+.menu1 .select{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    border: 1px solid gray;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.select p{
+    font-size: 25px;
+    padding: 15px 0 0 20px;
+}
+
+.menu2{
+    width: 200px;
+    font-size: 20px;
+}
+
+.menu2 p{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.menu2 ul{
+    padding-left: 20px;
+    list-style: circle;
+}
+
+.menu2 ul li{
+    padding-bottom: 10px;
+}
+
+.menu2 ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu2 a:hover{
+    text-decoration: underline;
+}
+
+.digiflex{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 140px 0 140px;
+}
