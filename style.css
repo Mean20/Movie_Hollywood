@@ -162,6 +162,12 @@
     font-weight: bold;
     color: white;
     background-color: brown;
+    border: 3px solid brown;
+    cursor: pointer;
+}
+
+.watch-btn:hover{
+    background-color: transparent;
 }
 
 .online-steaming{
@@ -437,6 +443,7 @@
     font-size: 18px;
     background-color: red;
     border: 2px solid red;
+    cursor: pointer;
 }
 
 .BROWS-ALL-MOVIES button:hover{
@@ -559,6 +566,7 @@
     font-size: 15px;
     background-color: red;
     border: 2px solid red;
+    cursor: pointer;
 }
 
 .BROWS-ALL-AUDIOBOOKS button:hover{
